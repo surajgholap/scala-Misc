@@ -33,3 +33,22 @@ g("eggy")
 var y = 5
 var multiplier = (x: Int) => x * y
 multiplier(4)
+
+//Function
+def abs(inp: Int) = if(inp < 0) -inp else inp
+abs(3)
+abs(-3)
+
+def fact(inp: Int):Int = if(inp == 1 | inp == 0) 1 else inp * fact(inp-1)
+fact(3)
+fact(4)
+
+def fact1(inp: Int) = {
+  var res = 1
+  for(i <- 1 to inp)
+    res *= i
+  res
+}
+fact1(3)
+fact1(4)
+
